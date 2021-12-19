@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="9dp"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_marginTop="-3dp"
+
+            android:progress="20"
+            />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relativeLayout">
+
+        <ImageView
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/no_connection"/>
+
+        <Button
+            android:id="@+id/btnNoConnection"
+            android:layout_width="140dp"
+            android:layout_height="60dp"
+            android:text="Retry"
+            android:background="@color/purple_500"
+            android:textColor="#fff"
+            android:textSize="23dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="553dp" />
+
+    </RelativeLayout>
+    </WebView>
+
+</LinearLayout>
